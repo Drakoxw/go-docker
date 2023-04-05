@@ -37,6 +37,10 @@ go build -o server .
 
 ### Crear imagen
 ```
-docker build -t servergo:latest .
+docker build -t server-go:latest .
 ```
 
+### Correr Contendor
+```
+docker run --name servergo -p 8080:8808 server-go:latest
+```
