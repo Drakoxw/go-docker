@@ -10,7 +10,7 @@ import (
 
 func Holamundo(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.Header.Get("Role"))
-	fmt.Fprintln(w, "Hola mundo")
+	fmt.Fprintln(w, "Hola mundo desde docker y go")
 }
 
 func main() {
@@ -19,5 +19,5 @@ func main() {
 
 	muxer.HandleFunc("/", Holamundo)
 
-	log.Fatal(http.ListenAndServe(":8808", muxer))
+	log.Fatal(http.ListenAndServe(":8080", muxer))
 }
