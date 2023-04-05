@@ -6,7 +6,7 @@ go mod init server
 
 #### lib
 ```
-go get -u github.com/disturb16/go_examples/echo/api
+go get -u github.com/....
 ```
 
 ### Daemon
@@ -23,8 +23,20 @@ go run .
 ```
 go build server
 ```
+### Crear bin
+```
+go build -o server .
+```
 
 ### Ejecutar app
 ```
 ./server
 ```
+
+# DOCKER
+
+### Crear imagen
+```
+docker build -t servergo:latest .
+```
+
